@@ -1,53 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Schnell Livraison</title>
 </head>
 <body>
-  <div class="header">
-    <h1>Schnell Livraison</h1>
-    <p>Commandez vos repas et faites-les livrer en un éclair!</p>
-  </div>
-  
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1"></div>
-      <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2"></div>
-      <!-- Ajoutez autant de slides que nécessaire -->
+  <header class="header">
+    <div class="logo">Schnell</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Commander</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue chez Schnell</h1>
+      <p>Découvrez une variété de plats délicieux, livrés rapidement à votre porte.</p>
+      <a href="#" class="cta-button">Commander maintenant</a>
     </div>
-    <!-- Ajoutez les flèches de navigation si nécessaire -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-  
-  <div class="rain"></div>
-  <div class="cyclist-animation"></div>
+  </section>
 
-  <div class="menu">
-    <!-- Ajoutez ici le menu des repas -->
-  </div>
+  <section class="featured-restaurants">
+    <h2>Restaurants en vedette</h2>
+    <!-- Ajoutez ici la liste des restaurants en vedette -->
+  </section>
 
-  <div class="footer">
-    <p>Contactez-nous: info@schnelllivraison.com</p>
-  </div>
+  <section class="how-it-works">
+    <h2>Comment ça marche</h2>
+    <!-- Ajoutez ici une explication des étapes pour commander -->
+  </section>
 
-  <script src="app.js"></script> <!-- Ajoutez un fichier JavaScript pour gérer l'animation -->
-  
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="app.js"></script> <!-- Si nécessaire -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-  
-  
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>schnell.mulhouse@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 Schnell Livraison. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
