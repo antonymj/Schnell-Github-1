@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.cyclist-animation {
+  /* Ajoutez ici les styles pour l'animation du cycliste */
+}
+
+.menu {
+  /* Ajoutez ici les styles pour la liste des repas */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.cyclist-animation {
+  background-image: url('cyclist.png'); /* Remplacez 'cyclist.png' par le chemin de votre image de cycliste */
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pedal 1s linear infinite;
+}
+
+@keyframes pedal {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
